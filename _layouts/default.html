@@ -12,7 +12,7 @@
         <link rel="stylesheet" href="/assets/css/style.css" type="text/css" media="all">
     </head>
 
-    <body class="front-page">
+    <body class="{{ page.class }}">
         <header id="header" class="site-header" role="banner">
             <nav class="navbar fixed-top navbar-expand-lg navbar-dark scrolling-navbar top-navbar">
                 <div class="container">
@@ -27,16 +27,16 @@
                     <div class="collapse navbar-collapse" id="topNavBar">
                         <ul class="navbar-nav mr-auto">
                             <li class="nav-item">
-                                <a href="{{ page.about }}" class="nav-link">About</a>
+                                <a href="/about" class="nav-link">About</a>
                             </li>
                             <li class="nav-item">
-                                <a href="{{ page.cv }}" class="nav-link">CV</a>
+                                <a href="/cv" class="nav-link">CV</a>
                             </li>
                             <li class="nav-item">
-                                <a href="{{ page.blog }}" class="nav-link">Blog</a>
+                                <a href="/blog" class="nav-link">Blog</a>
                             </li>
                             <li class="nav-item">
-                                <a href="{{ page.contact }}" class="nav-link">Contact</a>
+                                <a href="/contact" class="nav-link">Contact</a>
                             </li>
                         </ul>
 
