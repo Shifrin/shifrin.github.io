@@ -14,4 +14,6 @@ jQuery(document).ready(function($) {
 
         return false;
     });
+
+    $('.copyright-year').text((new Date().getFullYear()));
 });

@@ -1,10 +1,13 @@
+@import url('https://fonts.googleapis.com/css?family=Merriweather:300,400,700');
+
 body {
-    /*font-family: -apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;*/
-    /*color: #222;*/
+    font-family: 'Merriweather', serif;
+    color: #333;
+    font-weight: 300;
 }
 .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+    font-family: 'Merriweather', serif;
     color: #333;
-    font-weight: 400;
 }
 .white-bg {
     background-color: #fff !important;
@@ -26,7 +29,7 @@ body {
     background: #187fe7;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to top right, #187fe7, #116dc9);  /* Chrome 10-25, Safari 5.1-6 */
 }
-body.home .site-header {
+body.front-page .site-header {
     height: 0;
     background: transparent;
 }
@@ -38,6 +41,8 @@ body.home .site-header {
     -webkit-border-radius: 0;
     -moz-border-radius: 0;
     border-radius: 0;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+    text-transform: uppercase;
 }
 .scrolling-navbar {
     -webkit-transition: background .5s ease-in-out, padding .5s ease-in-out;
@@ -67,7 +72,7 @@ body.home .site-header {
     margin-bottom: 5rem;
 }
 
-/* Front Page */
+/* Front Page Intro */
 .ms-intro {
     height: 100vh;
     background: #187fe7;  /* fallback for old browsers */
@@ -95,12 +100,14 @@ body.home .site-header {
     height: 200px;
     background: #fff;
 }
-.ms-intro-text {
-    padding: 1rem 1rem 1rem 0;
-    border-right: 2px dashed #fff;
+.ms-intro-text .text-muted {
+    color: #fff !important;
 }
-.ms-intro-text span {
-    font-size: 1.75rem;
+.ms-intro-text .description {
+    -webkit-animation-delay: .5s;
+    -moz-animation-delay: .5s;
+    -o-animation-delay: .5s;
+    animation-delay: .5s;
 }
 .blog-post {
     -webkit-animation-delay: 1.3s;
@@ -126,6 +133,15 @@ body.home .site-header {
 .blog-post .read-more {
     color: #fff !important;
     background-color: transparent !important;
+}
+.front-page .site-footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+.footer-copyright,
+.footer-copyright > a {
+    color: #fff;
 }
 
 /* Expertise */

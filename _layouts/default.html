@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+        <title>{{ page.title }}</title>
+
+        <link rel="stylesheet" href="/assets/css/bootstrap.min.css" type="text/css" media="all">
+        <link rel="stylesheet" href="/assets/css/mdb.min.css" type="text/css" media="all">
+        <link rel="stylesheet" href="/assets/css/style.css" type="text/css" media="all">
+    </head>
+
+    <body class="front-page">
+        <header id="header" class="site-header" role="banner">
+            <nav class="navbar fixed-top navbar-expand-lg navbar-dark scrolling-navbar top-navbar">
+                <div class="container">
+                    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#topNavBar" aria-controls="topNavBar" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <a class="navbar-brand" href="/">
+                        <strong>Mohammed Shifreen</strong>
+                    </a>
+
+                    <div class="collapse navbar-collapse" id="topNavBar">
+                        <ul class="navbar-nav mr-auto">
+                            <li class="nav-item">
+                                <a href="{{ page.about }}" class="nav-link">About</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="{{ page.cv }}" class="nav-link">CV</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="{{ page.blog }}" class="nav-link">Blog</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="{{ page.contact }}" class="nav-link">Contact</a>
+                            </li>
+                        </ul>
+
+                        <ul class="navbar-nav nav-flex-icons">
+                            <li class="nav-item">
+                                <a class="nav-link" href="https://github.com/Shifrin" target="_blank">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="https://stackoverflow.com/users/1933627/shifrin" target="_blank">
+                                    <i class="fab fa-stack-overflow"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <main id="content" class="site-content" role="main">
+            {{ content }}
+        </main>
+
+        <footer id="footer" class="site-footer" role="contentinfo">
+            <div class="container">
+                <div class="footer-copyright text-center py-3">
+                    Hand Crafted by Mohammed Shifreen <span class="d-block">&copy; <span class="copyright-year"></span>, mshifreen.com</span>
+                </div>
+            </div>
+        </footer>
+
+        <script type="text/javascript" src="/assets/js/jquery-3.2.1.min.js"></script>
+        <script type="text/javascript" src="/assets/js/tether.min.js"></script>
+        <script type="text/javascript" src="/assets/js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="/assets/js/mdb.min.js"></script>
+        <script defer src="https://use.fontawesome.com/releases/v5.0.10/js/all.js" integrity="sha384-slN8GvtUJGnv6ca26v8EzVaR9DC58QEwsIk9q1QXdCU8Yu8ck/tL/5szYlBbqmS+" crossorigin="anonymous"></script>
+        <script type="text/javascript" src="/assets/js/app.js"></script>
+    </body>
+</html>
