@@ -23,15 +23,17 @@ body {
     opacity: .7;
 }
 
+/* Layouts */
+.site-content {
+    padding: 3rem 0;
+}
+
 /* Header & Top Navigation */
 .site-header {
     height: 64px;
     background: #187fe7;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to top right, #187fe7, #116dc9);  /* Chrome 10-25, Safari 5.1-6 */
-}
-body.front-page .site-header {
-    height: 0;
-    background: transparent;
+    background: linear-gradient(to top right, #187fe7, #116dc9); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 .top-navbar {
     background: transparent;
@@ -52,6 +54,7 @@ body.front-page .site-header {
 .top-nav-collapse {
     background: #187fe7;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to top right, #187fe7, #116dc9);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to top right, #187fe7, #116dc9); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     padding-top: 0.75rem;
     padding-bottom: 0.75rem;
 }
@@ -72,7 +75,20 @@ body.front-page .site-header {
     margin-bottom: 5rem;
 }
 
-/* Front Page Intro */
+/* Front Page */
+body.front-page .site-header {
+    height: 0;
+    background: transparent;
+}
+body.front-page .site-content {
+    padding: 0;
+}
+body.front-page .site-footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background: transparent !important;
+}
 .ms-intro {
     height: 100vh;
     background: #187fe7;  /* fallback for old browsers */
@@ -134,10 +150,12 @@ body.front-page .site-header {
     color: #fff !important;
     background-color: transparent !important;
 }
-.front-page .site-footer {
-    position: fixed;
-    bottom: 0;
-    width: 100%;
+
+/* Footer */
+.site-footer {
+    background: #187fe7;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to top right, #187fe7, #116dc9); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to top right, #187fe7, #116dc9); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 .footer-copyright,
 .footer-copyright > a {

@@ -7,12 +7,14 @@
 
         <title>{{ page.title }}</title>
 
+        <meta name="description" content="{{ page.description }}">
+
         <link rel="stylesheet" href="/assets/css/bootstrap.min.css" type="text/css" media="all">
         <link rel="stylesheet" href="/assets/css/mdb.min.css" type="text/css" media="all">
         <link rel="stylesheet" href="/assets/css/style.css" type="text/css" media="all">
     </head>
 
-    <body class="{{ page.class }}">
+    <body class="{{ page.bodyClass }}">
         <header id="header" class="site-header" role="banner">
             <nav class="navbar fixed-top navbar-expand-lg navbar-dark scrolling-navbar top-navbar">
                 <div class="container">
@@ -41,6 +43,11 @@
                         </ul>
 
                         <ul class="navbar-nav nav-flex-icons">
+                            <li class="nav-item">
+                                <a class="nav-link" href="https://www.linkedin.com/in/mshifreen/" target="_blank">
+                                    <i class="fab fa-linkedin"></i>
+                                </a>
+                            </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="https://github.com/Shifrin" target="_blank">
                                     <i class="fab fa-github"></i>
