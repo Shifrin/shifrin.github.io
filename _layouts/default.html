@@ -9,9 +9,9 @@
 
         <meta name="description" content="{{ page.description }}">
 
-        <link rel="stylesheet" href="/assets/css/bootstrap.min.css" type="text/css" media="all">
-        <link rel="stylesheet" href="/assets/css/mdb.min.css" type="text/css" media="all">
-        <link rel="stylesheet" href="/assets/css/style.css" type="text/css" media="all">
+        <link href="/assets/css/bootstrap.min.css" type="text/css" rel="stylesheet" media="all">
+        <link href="/assets/css/mdb.min.css" type="text/css" rel="stylesheet" media="all">
+        <link href="/assets/css/style.css?{{ site.time | date: '%s%N' }}" type="text/css" rel="stylesheet" media="all">
     </head>
 
     <body class="{{ page.bodyClass }}">
