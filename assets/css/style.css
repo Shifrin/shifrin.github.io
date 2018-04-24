@@ -82,7 +82,7 @@ body {
 
 /* Front Page */
 body.front-page {
-    padding-bottom: 0;
+    margin-bottom: 0;
 }
 body.front-page .site-header {
     height: 0;

@@ -2,6 +2,7 @@
 layout: post
 title: "Introduction"
 date: 2018-04-19
+category: blog
 ---
 
 ## I’m warmly welcoming you to my blog!
@@ -14,6 +15,6 @@ I believe that those experiences will help me to write perfect posts and teach t
 
 I will also post some code snippets that I have used in my projects. The code snippets are the small block of reusable code that can be inserted in your functions or working files.
 
-I like and welcome your feedbacks on each post that I publish. Because it will help me to learn from you devs (friends of developers), it will correct me if I made any mistakes and will help to become a perfect tech blogger.
+I like and welcome your feedback on each post that I publish. Because it will help me to learn from you devs (friends of developers), it will correct me if I made any mistakes and will help to become a perfect tech blogger.
 
 Learning will never end… Thank you for visiting my blog.
