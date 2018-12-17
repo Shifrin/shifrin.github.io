@@ -1,5 +1,5 @@
 /**
- * Created by shifr on 6/18/2017.
+ * Created by Mohammed Shifreen <mshifreen@gmail.com>
  */
 
 jQuery(document).ready(function($) {

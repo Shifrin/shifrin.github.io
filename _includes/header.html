@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <!-- Required meta tags -->
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <!-- Page Description -->
+        <meta name="description" content="{{ page.description }}">
+
+        {% include styles.html %}
+
+        <title>{{ page.title }} | {{ site.name }}</title>
+    </head>
+
+    <body class="{{ page.bodyClass }}">
+        <!-- start of header -->
+        <header class="header mb-auto">
+            {% include navigation.html %}
+        </header>
+        <!-- end of header -->
+
+        <!-- start of main -->
+        <main class="main" role="main">

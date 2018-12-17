@@ -1,1 +1,4 @@
 _site/
+
+# phpstorm project files
+.idea

@@ -1,8 +1,7 @@
 ---
 layout: post
-title: "Introduction"
+title: Introduction
 date: 2018-04-19
-category: blog
 ---
 
 ## I’m warmly welcoming you to my blog!
@@ -10,6 +9,8 @@ category: blog
 I’m a Web Developer and being more than 4 years in the web development industry with hands on experience in various types of projects personally and officially. I’m interested in writing tech posts from my experience which inspired me to create a website. So here it is, writing my very first post as an introduction.
 
 I am specialised in Yii Framework and WordPress and therefore my most of the posts that I have planned to write belong to those categories. I have several experiences in Yii and Yii2 based app developments from scratch to deploy. I have used WordPress in several projects including news websites, corporate websites, landing pages and sometimes for static websites.
+
+<!--more-->
 
 I believe that those experiences will help me to write perfect posts and teach the beginners to improve their knowledge at least on specific areas. It will also allow developers to share their thoughts by commenting on each post.
 

@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <!-- Required meta tags -->
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <!-- Page Description -->
+        <meta name="description" content="{{ page.description }}">
+
+        {% include styles.html %}
+
+        <title>{{ site.name }}</title>
+    </head>
+
+    <body class="front-page">
+        <div class="cover w-100 h-100">
+            <img src="/assets/img/intro-bg.jpg" class="cover-bg">
+            <div class="overlay w-100 h-100"></div>
+        </div>
+
+        <div class="d-flex flex-column h-100 w-100">
+            <header class="header mb-auto">
+                {% include navigation.html %}
+            </header>
+
+            <main class="main intro" role="main">
+                {{ content }}
+            </main>
+
+            <footer class="footer text-center mt-auto" role="contentinfo">
+                <p>Hand Crafted by Mohammed Shifreen
+                    <span class="d-block">&copy;&nbsp;<span class="copyright-year">{{ 'now' | date: "%Y" }}</span>,&nbsp;mshifreen.com</span></p>
+            </footer>
+        </div>
+
+        {% include scripts.html %}
+    </body>
+</html>
