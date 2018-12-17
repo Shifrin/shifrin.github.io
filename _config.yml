@@ -1,6 +1,5 @@
 name: Mohammed Shifreen, Full Stack Web Developer!
 markdown: kramdown
-#permalink: /blog/:year/:month/:day/:title
 plugins:
   - jekyll-paginate
 paginate: 10
