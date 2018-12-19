@@ -2,10 +2,11 @@
 layout: default
 title: Projects
 description: The page that list some of my best project works as portfolio.
+permalink: /projects/
 bodyClass: projects-page
 ---
 
-<div class="page-header d-flex flex-column" style="background-image: url('/assets/img/projects-bg.jpg')">
+<div class="page-header d-flex flex-column" style="background-image: url('{{ "/assets/img/projects-bg.jpg" | relative_url }}')">
     <div class="page-title mt-auto">
         <div class="container text-white">
             <h1 class="display-3">Projects</h1>
@@ -16,11 +17,7 @@ bodyClass: projects-page
 
 <div class="page-content">
     <div class="container">
-        <blockquote class="blockquote .alert-primary">
-            <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
-        </blockquote>
-
-        <div class="alert alert-success mb-5" role="alert">
+        <div class="alert alert-primary mb-5" role="alert">
             I have listed some of the best projects that I worked on from scratch and partially with
             the small description and categorized them as freelance, office, personal and open source.
             Sometimes some of the projects links are may not work due to the existing or maintenance problems
@@ -33,7 +30,7 @@ bodyClass: projects-page
             <div class="card-columns">
                 <div class="card">
                     <a href="http://www.yemenjournal.com/" target="_blank">
-                        <img class="card-img-top" src="/assets/img/projects/yemen-journal.jpg" alt="Yemen Journal Project">
+                        <img class="card-img-top" src="{{ '/assets/img/projects/yemen-journal.jpg' | relative_url }}" alt="Yemen Journal Project">
 
                         <div class="card-body">
                             <h4 class="card-title">Yemen Journal</h4>
@@ -48,7 +45,7 @@ bodyClass: projects-page
 
                 <div class="card">
                     <a href="http://www.gulfif.com" target="_blank">
-                        <img class="card-img-top" src="/assets/img/projects/gulf-international-forum.jpg" alt="Gulf International Forum Project">
+                        <img class="card-img-top" src="{{ '/assets/img/projects/gulf-international-forum.jpg' | relative_url }}" alt="Gulf International Forum Project">
 
                         <div class="card-body">
                             <h4 class="card-title">Gulf International Forum</h4>
@@ -63,7 +60,7 @@ bodyClass: projects-page
 
                 <div class="card">
                     <a href="http://www.karakmqanes.com/" target="_blank">
-                        <img class="card-img-top" src="/assets/img/projects/karak-mqanes.jpg" alt="Karak Mqanes Project">
+                        <img class="card-img-top" src="{{ '/assets/img/projects/karak-mqanes.jpg' | relative_url }}" alt="Karak Mqanes Project">
 
                         <div class="card-body">
                             <h4 class="card-title">Karak Mqanes</h4>
@@ -79,7 +76,7 @@ bodyClass: projects-page
 
                 <div class="card">
                     <a href="http://www.mqanesmedia.com/" target="_blank">
-                        <img class="card-img-top" src="/assets/img/projects/mqanes-media.jpg" alt="Mqanes Media Project">
+                        <img class="card-img-top" src="{{ '/assets/img/projects/mqanes-media.jpg' | relative_url }}" alt="Mqanes Media Project">
 
                         <div class="card-body">
                             <h4 class="card-title">Mqanes Media</h4>
@@ -100,7 +97,7 @@ bodyClass: projects-page
             <div class="card-columns">
                 <div class="card">
                     <a href="http://www.arabphotostore.com/" target="_blank">
-                        <img class="card-img-top" src="/assets/img/projects/arab-photo-store.jpg" alt="Arab Photo Store Project">
+                        <img class="card-img-top" src="{{ '/assets/img/projects/arab-photo-store.jpg' | relative_url }}" alt="Arab Photo Store Project">
 
                         <div class="card-body">
                             <h4 class="card-title">Arab Photo Store</h4>

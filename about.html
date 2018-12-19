@@ -2,10 +2,11 @@
 layout: default
 title: About Me
 description: The page that describes about my skills and experiences.
+permalink: /about/
 bodyClass: about-page
 ---
 
-<div class="page-header d-flex flex-column" style="background-image: url('/assets/img/intro-bg.jpg')">
+<div class="page-header d-flex flex-column" style="background-image: url('{{ "/assets/img/intro-bg.jpg" | relative_url }}')">
     <div class="page-title mt-auto">
         <div class="container text-white">
             <div class="row align-items-end">
@@ -15,7 +16,7 @@ bodyClass: about-page
                 </div>
 
                 <div class="d-none d-md-block col-md-3">
-                    <img src="/assets/img/me.jpg" class="img-fluid rounded-circle me mx-auto" alt="Mohammed Shifreen">
+                    <img src="{{ '/assets/img/me.jpg' | relative_url }}" class="img-fluid rounded-circle me mx-auto" alt="Mohammed Shifreen">
                 </div>
             </div>
         </div>
@@ -39,7 +40,7 @@ bodyClass: about-page
 
             <div class="row">
                 <div class="d-none d-md-flex col-md-4">
-                    <img src="assets/img/story.png" class="img-fluid m-auto" alt="Simple Story">
+                    <img src="{{ '/assets/img/story.png' | relative_url }}" class="img-fluid m-auto" alt="Simple Story">
                 </div>
 
                 <div class="col-12 col-md-8">
@@ -137,7 +138,7 @@ bodyClass: about-page
                     languages or frameworks.
                 </p>
             </div>
-            <a href="/assets/files/cv.pdf" class="btn btn-lg btn-outline-dark mr-4" target="_blank">
+            <a href="{{ '/assets/files/cv.pdf' | relative_url }}" class="btn btn-lg btn-outline-dark mr-4" target="_blank">
                 <i class="fas fa-cloud-download-alt"></i> Download My CV
             </a>
             <a href="mailto:mshifreen@gmail.com" class="btn btn-lg btn-outline-dark">

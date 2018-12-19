@@ -1,7 +1,10 @@
 ---
 layout: post
-title: Introduction
-date: 2018-04-19
+title: "Introducing my blog"
+date: 2018-12-15
+categories: [General]
+excerpt_separator: <!--more-->
+image_id: SymZoeE8quA
 ---
 
 ## I’m warmly welcoming you to my blog!

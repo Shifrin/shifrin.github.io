@@ -86,6 +86,7 @@ img.me {
 .nav-link {
     color: #fff;
 }
+.nav-item.active .nav-link,
 .nav-link:hover,
 .nav-link:focus {
     color: #fff;

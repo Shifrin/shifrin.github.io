@@ -3,31 +3,42 @@ layout: default
 bodyClass: post-page
 ---
 
-<div class="container">
-    <div class="row">
-        <div class="col-md-8 offset-md-2">
-            <section class="blog-post no-separator">
-                <article class="post">
-                    <header class="post-header">
-                        <h2 class="post-title">{{ page.title }}</h2>
-                    </header>
+<div class="page-header d-flex flex-column" style="background-image: url('https://source.unsplash.com/{{ page.image_id }}/1920x1080')">
+    <div class="page-title mt-auto">
+        <div class="container text-white">
+            <h1 class="display-3">{{ page.title }}</h1>
+        </div>
+    </div>
+</div>
 
-                    <div class="post-info text-muted mb-3">
-                        <span class="date">
-                            <i class="far fa-calendar"></i> {{ page.date | date: '%B %d, %Y' }}
-                        </span>
-                        {% if page.tags %}
-                            <span class="category ml-3">
-                                <i class="far fa-bookmark"></i> {% for tag in page.tags %} # {{ tag }} {% endfor %}
+<div class="page-content">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 offset-md-2">
+                <section class="blog-post no-separator">
+                    <article class="post">
+                        <div class="post-info text-muted mb-3">
+                            <span class="date">
+                                <i class="far fa-calendar"></i> {{ page.date | date: '%B %d, %Y' }}
                             </span>
-                        {% endif %}
-                    </div>
+                            <span class="category ml-3">
+                                <i class="far fa-folder"></i> {{ page.categories }}
+                            </span>
+                            {% if page.tags.size > 0 %}
+                            <span class="tags ml-3">
+                                <i class="far fa-bookmark"></i> {% for tag in page.tags %} <span class="mr-1">#{{ tag }}</span> {% endfor %}
+                            </span>
+                            {% endif %}
+                        </div>
 
-                    <div class="post-summary mb-3">
-                        {{ content }}
-                    </div>
-                </article>
-            </section>
+                        <hr class="mb-5">
+
+                        <div class="post-content mb-3">
+                            {{ content }}
+                        </div>
+                    </article>
+                </section>
+            </div>
         </div>
     </div>
 </div>

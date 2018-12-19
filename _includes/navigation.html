@@ -1,9 +1,9 @@
-<nav class="navbar navbar-expand-lg mb-0{% if page.url !== '/' %} bg-black{% endif %}">
-    <a href="/index.html" class="navbar-brand d-none d-md-inline-block">Mohammed Shifreen</a>
-    <a href="/index.html" class="navbar-brand d-md-none" href="#">MS</a>
+<nav class="navbar navbar-expand-lg mb-0{% if page.url != '/' %} bg-black{% endif %}">
+    <a href="/" class="navbar-brand d-none d-md-inline-block">Mohammed Shifreen</a>
+    <a href="/" class="navbar-brand d-md-none" href="#">MS</a>
 
     {% if page.url == '/about.html' %}
-        <img src="img/me.jpg" alt="Mohammed Shifreen" class="d-md-none rounded-circle ml-auto mr-3" width="40" height="40">
+        <img src="{{ '/assets/img/me.jpg' | relative_url }}" alt="Mohammed Shifreen" class="d-md-none rounded-circle ml-auto mr-3" width="40" height="40">
     {% endif %}
 
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler"
@@ -13,14 +13,14 @@
 
     <div class="collapse navbar-collapse" id="navbarToggler">
         <ul class="navbar-nav ml-auto mr-5">
-            <li class="nav-item active">
-                <a class="nav-link" href="/about.html">About</a>
+            <li class="nav-item{% if page.url == '/about/' %} active{% endif %}">
+                <a class="nav-link" href="/about/">About</a>
             </li>
-            <li class="nav-item">
-                <a class="nav-link" href="/projects.html">Projects</a>
+            <li class="nav-item{% if page.url == '/projects/' %} active{% endif %}">
+                <a class="nav-link" href="/projects/">Projects</a>
             </li>
-            <li class="nav-item">
-                <a class="nav-link" href="/blog.html">Blog</a>
+            <li class="nav-item{% if page.url == '/blog/' %} active{% endif %}">
+                <a class="nav-link" href="/blog/">Blog</a>
             </li>
         </ul>
 

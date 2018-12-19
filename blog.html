@@ -2,10 +2,13 @@
 layout: default
 title: Blog
 description: The blog page that is listing all the blog posts with pagination links.
+permalink: /blog/
 bodyClass: blog-page
+pagination:
+    enabled: true
 ---
 
-<div class="page-header d-flex flex-column" style="background-image: url('/assets/img/blog-bg.jpg')">
+<div class="page-header d-flex flex-column" style="background-image: url('{{ "/assets/img/blog-bg.jpg" | relative_url }}')">
     <div class="page-title mt-auto">
         <div class="container text-white">
             <h1 class="display-3">Blog</h1>
@@ -19,7 +22,7 @@ bodyClass: blog-page
         <div class="row">
             <div class="col-md-8 offset-md-2">
                 <section class="blog-posts no-separator">
-                    {% for post in site.posts %}
+                    {% for post in paginator.posts %}
                         <article class="post">
                             <header class="post-header">
                                 <h2 class="post-title">
@@ -31,10 +34,13 @@ bodyClass: blog-page
                                 <span class="date">
                                     <i class="far fa-calendar"></i> {{ post.date | date: '%B %d, %Y' }}
                                 </span>
-                                {% if post.tags %}
-                                    <span class="category ml-3">
-                                        <i class="far fa-bookmark"></i> {% for tag in post.tags %} # {{ tag }} {% endfor %}
-                                    </span>
+                                <span class="category ml-3">
+                                    <i class="far fa-folder"></i> {{ post.categories }}
+                                </span>
+                                {% if post.tags.size > 0 %}
+                                <span class="tags ml-3">
+                                    <i class="far fa-bookmark"></i> {% for tag in post.tags %} <span class="mr-1">#{{ tag }}</span> {% endfor %}
+                                </span>
                                 {% endif %}
                             </div>
 
@@ -51,24 +57,23 @@ bodyClass: blog-page
                     {% endfor %}
                 </section>
 
+                <hr class="mt-5">
+
                 <!-- Pagination links -->
-                <div class="pagination-links">
-                    {% if paginator.previous_page %}
-                        <a href="{{ paginator.previous_page_path }}" class="previous">
-                            Previous
-                        </a>
-                    {% else %}
-                        <span class="previous">Previous</span>
-                    {% endif %}
-                        <span class="page_number ">
-                            Page: {{ paginator.page }} of {{ paginator.total_pages }}
-                        </span>
+                {% if paginator.total_pages > 1 %}
+                <div class="paginate-links text-right">
                     {% if paginator.next_page %}
-                        <a href="{{ paginator.next_page_path }}" class="next">Next</a>
-                    {% else %}
-                        <span class="next ">Next</span>
+                    <a href="{{ paginator.next_page_path | prepend: site.baseurl }}" class="btn btn-outline-dark">
+                        <i class="fas fa-chevron-circle-left"></i> Older Posts
+                    </a>
+                    {% endif %}
+                    {% if paginator.previous_page %}
+                    <a href="{{ paginator.previous_page_path | prepend: site.baseurl }}" class="btn btn-outline-dark">
+                        Newer Posts <i class="fas fa-chevron-circle-right"></i>
+                    </a>
                     {% endif %}
                 </div>
+                {% endif %}
             </div>
         </div>
     </div>
