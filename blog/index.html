@@ -2,10 +2,7 @@
 layout: default
 title: Blog
 description: The blog page that is listing all the blog posts with pagination links.
-permalink: /blog/
 bodyClass: blog-page
-pagination:
-    enabled: true
 ---
 
 <div class="page-header d-flex flex-column" style="background-image: url('{{ "/assets/img/blog-bg.jpg" | relative_url }}')">
@@ -57,10 +54,10 @@ pagination:
                     {% endfor %}
                 </section>
 
-                <hr class="mt-5">
-
                 <!-- Pagination links -->
                 {% if paginator.total_pages > 1 %}
+                <hr class="mt-5">
+
                 <div class="paginate-links text-right">
                     {% if paginator.next_page %}
                     <a href="{{ paginator.next_page_path | prepend: site.baseurl }}" class="btn btn-outline-dark">
