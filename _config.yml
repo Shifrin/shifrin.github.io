@@ -13,16 +13,16 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: Mohammed Shifreen, Full Stack Web Developer
 name: Mohammed Shifreen, Full Stack Web Developer
 email: mshifreen@gmail.com
-description: >- # this means to ignore newlines until "baseurl:"
-  I'm Mohammed Shifreen, a full stack web developer with over 6 years of experiences in a wide range of
-  developments including freelancing and this is my website that describes about me with blogging.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 permalink: /blog/:year/:month/:day/:title
-#theme: minima
+logo: /assets/img/me.jpg
+
+# Webmaster tools verifications
+webmaster_verifications:
+  google: IEZmD4FTSIHT4pRgJo17oebGPG57rdV0_Cem7B2ONWs
 
 # Social media details
 github_username:  Shifrin
@@ -34,19 +34,15 @@ stackoveflow_username:  shifrin
 markdown: kramdown
 
 # Paginate settings
-pagination:
-  enabled: true
-  per_page: 1
-  permalink: '/page/:num/'
-  title: ':title - page :num'
-  limit: 0
-  sort_field: 'date'
-  sort_reverse: true
+paginate: 10
+paginate_path: "/blog/page/:num/"
 
 # Plugins
 plugins:
   - jekyll-feed
-  - jekyll-paginate-v2
+  - jekyll-paginate
+  - jekyll-sitemap
+  - jekyll-seo-tag
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list

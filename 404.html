@@ -1,24 +1,21 @@
 ---
 layout: default
+title: Page Not Found!
 ---
 
-<style type="text/css" media="screen">
-  .container {
-    margin: 10px auto;
-    max-width: 600px;
-    text-align: center;
-  }
-  h1 {
-    margin: 30px 0;
-    font-size: 4em;
-    line-height: 1;
-    letter-spacing: -1px;
-  }
-</style>
+<div class="page-header d-flex flex-column" style="background-image: url('{{ "/assets/img/404.jpg" | relative_url }}')">
+    <div class="page-title mt-auto">
+        <div class="container text-white">
+          <h1 class="display-3">Page Not Found!</h1>
+        </div>
+    </div>
+</div>
 
-<div class="container">
-  <h1>404</h1>
+<div class="page-content">
+    <div class="container text-center my-5 py-5">
+      <h2>404</h2>
 
-  <p><strong>Page not found :(</strong></p>
-  <p>The requested page could not be found.</p>
+      <p class="lead"><strong>Page not found :(</strong></p>
+      <p class="lead">We couldn't find the page that you're looking for, perhaps navigation will help you.</p>
+    </div>
 </div>
