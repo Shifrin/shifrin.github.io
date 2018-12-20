@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Introducing my blog"
+description: The post which is describes about my blog in brief as an introduction.  
 date: 2018-12-15
 categories: [General]
 excerpt_separator: <!--more-->
