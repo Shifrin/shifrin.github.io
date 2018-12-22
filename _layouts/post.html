@@ -1,6 +1,7 @@
 ---
 layout: default
 bodyClass: post-page
+comments: true
 ---
 
 <div class="page-header d-flex flex-column" style="background-image: url('https://source.unsplash.com/{{ page.image_id }}/1920x1080')">
@@ -29,13 +30,42 @@ bodyClass: post-page
                                 <i class="far fa-bookmark"></i> {% for tag in page.tags %} <span class="mr-1">#{{ tag }}</span> {% endfor %}
                             </span>
                             {% endif %}
+                            {% if page.comments %}
+                            <span class="comments">
+                                <a href="http://example.com/bar.html#disqus_thread"><i class="far fa-comments"></i> comments</a>
+                            </span>
+                            {% endif %}
                         </div>
 
                         <hr class="mb-5">
 
-                        <div class="post-content mb-3">
+                        <div class="post-content">
                             {{ content }}
                         </div>
+
+                        {% if page.comments %}
+                        <hr class="my-5">
+
+                        <div class="post-comments">
+                            <div id="disqus_thread"></div>
+
+                            <script>
+                                var disqus_config = function () {
+                                    this.page.url = '{{ page.url }}';
+                                    this.page.identifier = '{{ page.url }}';
+                                };
+
+                                (function() { // DON'T EDIT BELOW THIS LINE
+                                    var d = document, s = d.createElement('script');
+                                    s.src = 'https://mshifreen.disqus.com/embed.js';
+                                    s.setAttribute('data-timestamp', +new Date());
+                                    (d.head || d.body).appendChild(s);
+                                })();
+                            </script>
+                            <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">
+                                comments powered by Disqus.</a></noscript>
+                        </div>
+                        {% endif %}
                     </article>
                 </section>
             </div>

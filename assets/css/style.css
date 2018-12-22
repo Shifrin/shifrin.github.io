@@ -31,7 +31,7 @@ img.me {
     background-repeat: no-repeat;
     background-size: 40px 40px;
     border-left-color: #004085;
-    padding-left: 70px;
+    padding: 1.5rem 1.25rem 1.5rem 4.5rem;
 }
 
 /* Front Page */
@@ -124,11 +124,6 @@ img.me {
     }
 }
 
-/* Main */
-.main {
-    /*position: relative;*/
-}
-
 /* Introduction */
 .intro {
     color: #fff;
@@ -197,7 +192,7 @@ img.me {
 }
 .page-content {
     margin: 3rem 0;
-    /*font-size: 1.25rem;*/
+    font-size: 1.2rem;
 }
 
 /* Sections of Page Content */
@@ -295,7 +290,6 @@ img.me {
 .read-more {
     text-transform: uppercase;
     border-width: 2px;
-    /*font-weight: 400;*/
 }
 
 /* Footer */
