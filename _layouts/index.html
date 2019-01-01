@@ -5,7 +5,9 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-        {% seo %}
+        <title>{{ page.title }}</title>
+
+        {% seo title=false %}
 
         {% include styles.html %}
 
@@ -46,8 +48,8 @@
             </main>
 
             <footer class="footer text-center mt-auto" role="contentinfo">
-                <p>Hand crafted by Mohammed Shifreen with Bootstrap, thanks for Github Pages, Jekyll, Bootstrap and Unsplash.
-                    <span class="d-block">&copy;&nbsp;<span class="copyright-year">{{ 'now' | date: "%Y" }}</span>,&nbsp;mshifreen.com</span></p>
+                <p>Hand crafted by Mohammed Shifreen with Bootstrap 4 and thanks for Github Pages, Jekyll, Unsplash.
+                    <span class="d-block">&copy;&nbsp;<span class="copyright-year">2018 - {{ 'now' | date: "%Y" }}</span>,&nbsp;mshifreen.com</span></p>
             </footer>
         </div>
 
