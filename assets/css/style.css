@@ -7,6 +7,9 @@ html,
 body {
     height: 100%;
 }
+body {
+    background-color: #eeeeee;
+}
 .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
     font-family: 'Merriweather', serif;
     margin-bottom: .75rem;
@@ -32,6 +35,25 @@ img.me {
     background-size: 40px 40px;
     border-left-color: #004085;
     padding: 1.5rem 1.25rem 1.5rem 4.5rem;
+}
+.upwork-icon {
+    margin-right: 4px;
+    letter-spacing: -3px;
+    font-weight: bolder;
+    font-family: Arial, Helvetica, SansSerif;
+}
+.card {
+    background-color: transparent;
+}
+.page-content a:not(.btn),
+.footer a:not(.btn) {
+    color: #212529;
+    text-decoration: underline;
+}
+.page-content a:hover:not(.btn),
+.footer a:hover:not(.btn) {
+    color: #212529;
+    opacity: .8;
 }
 
 /* Front Page */
@@ -64,13 +86,13 @@ img.me {
     opacity: .6;
 }
 
-/* Header */
-.header {
-    background-color: #343a40;
-}
+/* Header & Navbar */
 .front-page .header {
     background-color: rgba(255, 255, 255, 0.05);
     border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+}
+.navbar.fixed-top {
+    background-color: #343a40;
 }
 .navbar-brand {
     color: #fff;
@@ -105,11 +127,11 @@ img.me {
     color: #fff;
 }
 @media (min-width: 992px) {
-    .header {
+    .navbar {
         padding: .5rem 2rem;
     }
 }
-@media (max-width: 767.98px) {
+@media (max-width: 991.98px) {
     .navbar {
         padding-top: 1.25rem;
         padding-bottom: 1.25rem;
@@ -127,9 +149,6 @@ img.me {
 /* Introduction */
 .intro {
     color: #fff;
-}
-.ms-intro {
-    margin-top: 6rem;
 }
 .ms-intro-text {
     text-shadow: 0 .05rem .1rem rgba(0, 0, 0, .5);
@@ -150,11 +169,8 @@ img.me {
     box-shadow: none;
 }
 @media (min-width: 992px) {
-    .ms-intro-text {
-        width: 80%;
-    }
-    .ms-intro-links {
-        width: 15%;
+    .ms-intro {
+        margin-top: 6rem;
     }
 }
 
@@ -195,6 +211,11 @@ img.me {
     font-size: 1.2rem;
 }
 
+/* Blog Page */
+.blog-posts .post-title {
+    font-size: 2.4rem;
+}
+
 /* Sections of Page Content */
 .page-content .summary p.primary {
     font-weight: 500;
@@ -210,7 +231,7 @@ img.me {
 }
 @media (min-width: 992px) {
     .page-content .summary {
-        max-width: 60%;
+        max-width: 75%;
         margin: 0 auto;
     }
 }
@@ -231,6 +252,7 @@ img.me {
 }
 .card-columns > .card > a {
     color: inherit;
+    text-decoration: none;
 }
 .card-columns > .card > a:hover,
 .card-columns > .card > a:focus {

@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-lg mb-0{% if page.url != '/' %} bg-black{% endif %}">
+<nav class="navbar navbar-expand-lg mb-0{% if page.url != '/' %} bg-black fixed-top{% endif %}">
     <a href="/" class="navbar-brand d-none d-md-inline-block">Mohammed Shifreen</a>
     <a href="/" class="navbar-brand d-md-none">MS</a>
 
@@ -12,7 +12,7 @@
     </button>
 
     <div class="collapse navbar-collapse" id="navbarToggler">
-        <ul class="navbar-nav ml-auto mr-5">
+        <ul class="navbar-nav ml-auto mt-3 mr-lg-5 mt-lg-0">
             <li class="nav-item{% if page.url == '/about-me/' %} active{% endif %}">
                 <a class="nav-link" href="/about-me/">About Me</a>
             </li>
